@@ -1,0 +1,36 @@
+  
+a:hover,p:hover,h1:hover,h2:hover
+{
+    color:rgb(176, 34, 204);
+}
+
+  h1 {
+    font-size: 60px;
+    
+  }
+ 
+  p, li {
+    font-size: 16px;
+    /* line-height 后而可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  html {
+    /* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
+    font-size: 16px;
+    /* Google fonts 输出的 CSS */
+    font-family: 'Open Sans', sans-serif; 
+    background-color:navajowhite;
+  }
+  body {
+    width: 800px;
+    margin: 0 auto;
+   
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  
