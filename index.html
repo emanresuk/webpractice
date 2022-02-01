@@ -2,43 +2,62 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="author" content="Emanresuk">
+    <meta name="description" content="这是一个基础html页面，应用了简单的css和JavaScript">
     <link href="style/style.css" rel="stylesheet">
     <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css"> 
    
-    <title>我的测试页面TITLE</title>
+    <title>测试页面
+        &lt;title&gt; 元素
+    </title>
+</head>
+<body>
     <h1>这是一个HEADING</h1>
+    <h1>&lt;h1&gt; 元素</h1>
+    <p1>悬浮鼠标在字段上会改变其颜色</p1>
     <h2>Bronia脾气很差HEDAING</h2>
+    <p>莫挨老子！</p>
+    <p><strong>点击图片循环查看</strong></p>
+    <img  src="image/bronia.png" alt="布洛妮娅在舰桥上"style="width: 720px;height: 420px;">
 
-<p1>Bronia大长腿（paragraph1）</p1>
-<p2>Bronia大长腿（paragraph2）</p2>
-<p>Bronia大长腿（paragraph）</p>
+    <p>基础表格</p>
+    <img  src="image/特殊字符.jpg" alt="特殊字符表"style="width: 720px;height: 300px;">
+    <img  src="image/选择器.png" alt="选择器"style="width: 720px;height: 450px;">
+    
 
-<img  src="image/bronia.png" alt="布洛妮娅在舰桥上"style="width: 720px;height: 420px;">
+    <p>HTML 中用 &lt;p&gt; 来定义段落元素</p>
+    <p>藏语示例：བཀྲ་ཤིས་བདེ་ལེགས།</p>
 
-<img  src="image/选择器.png" alt="选择器"style="width: 600px;height: 400px;">
+    <p class="猫咪">我的猫咪脾气<strong>暴躁</strong>（强调）</p>
 
-<p class="猫咪">我的猫咪脾气<strong>暴躁</strong>:)</p>
-
-  </head>
-  <body>
+  
    
     <p>Mozilla 是一个全球社区，这里聚集着来自五湖四海的</p>
 
-    <ul>
+    <ul>无序列表
       <li>技术人员</li>
       <li>思考者</li>
       <li>建造者</li>
     </ul>
    
-    <ol>
+    <ol>有序列表
         <li>技术人员</li>
         <li>思考者</li>
         <li>建造者</li>
     </ol>
     
-    <p>我们致力于……</p>  
-    <a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla 宣言</a>
-    <button>切换用户</button>
+    <p>Disable 输入栏</p>  
+    <!-- 使用disabled属性来防止终端用户输入文本到输入框中 -->
+    <input type="text" disabled>
+    <p>可以输入的输入栏</p>
+    <!-- 下面这个输入框没有disabled属性，所以用户可以向其中输入 -->
+    <input type="text">
+    <br>
+    <a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla 宣言 超链接</a>
+    <br>
+    <button>切换用户（点击按钮调用setUsername）</button>
+    <br>
+
     <script src="script/main.js" defer></script>
-</body>
+  </body>
 </html> 

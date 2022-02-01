@@ -1,25 +1,28 @@
 let anotherHeading = document.querySelector('h2');
-anotherHeading.textContent = 'Hello world!';
+anotherHeading.textContent = '把h2的内容替换为这段话';
 document.querySelector('p').onclick = function() {
-    alert('莫挨老子！');
-}
-document.querySelector('p1').onclick = function() {
     alert('喊你莫挨老子！');
 }
+
 let myImage = document.querySelector('img');
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'image/选择器.png') 
+    if(mySrc === 'image/car1.jpg')
     {
-      myImage.setAttribute('src', 'image/bronia.png');
+        myImage.setAttribute('src', 'image/bronia.png');
+    }
+    if(mySrc === 'image/bronia.png') 
+    {
+      myImage.setAttribute('src', 'image/car0.jpg');
     } /*else 
         {
         myImage.setAttribute('src', 'image/选择器.png');
         }*/
-    if(mySrc === 'image/bronia.png')
+    if(mySrc === 'image/car0.jpg')
     {
-        myImage.setAttribute('src', 'image/选择器.png');
+        myImage.setAttribute('src', 'image/car1.jpg');
     }
+   
     }
     let myButton = document.querySelector('button');
     let myHeading = document.querySelector('h1');
@@ -30,14 +33,14 @@ myImage.onclick = function() {
           } else
           {
         localStorage.setItem('name', myName);
-        myHeading.textContent = 'Mozilla 酷毙了，' + myName;
+        myHeading.textContent = '用这段话替换h1的内容，再加上用户名：' + myName;
           }
       }
       if(!localStorage.getItem('name')) {
         setUserName();
       } else {
         let storedName = localStorage.getItem('name');
-        myHeading.textContent = 'Mozilla 酷毙了，' + storedName;
+        myHeading.textContent = '用这段话替换h1的内容，再加上用户名：' + storedName;
       }
       myButton.onclick = function() {
         setUserName();
