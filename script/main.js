@@ -4,6 +4,12 @@ document.querySelector('p').onclick = function() {
     alert('喊你莫挨老子！');
 }
 
+let email = document.getElementById('Mailing_address');
+
+document.getElementById('Mailing_address').onclick = function() {
+    alert('这是一个邮箱地址');
+}
+
 let myImage = document.querySelector('img');
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
